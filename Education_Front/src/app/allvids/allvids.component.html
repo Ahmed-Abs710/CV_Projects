@@ -1,0 +1,15 @@
+<div class="container text-center">
+  <div class="row g-5">
+    @for(vid of videos; track vid.id){
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{vid.title}}</h5>
+          <p>{{vid.description}}</p>
+          <a class="btn btn-primary" (click)="GO(vid.id)">Watch</a>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

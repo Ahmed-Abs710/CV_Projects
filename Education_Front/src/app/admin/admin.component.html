@@ -1,0 +1,115 @@
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand h1" href="#">Education Platform</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Choose Item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          @if(this.roles.addStudent === true){
+          <li class="nav-item">
+            <a class="nav-link active"  routerLink="addStudent">Add Student</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Add Student</a>
+          </li>
+          }
+          @if(this.roles.delteStudent === true){
+          <li class="nav-item">
+            <a class="nav-link active">Delete Student</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Delete Student</a>
+          </li>
+          }
+          @if(this.roles.updateStudent === true){
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="updateStudents">Update Student</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Update Student</a>
+          </li>
+          }
+          @if(this.roles.addTeacher === true){
+          <li class="nav-item">
+            <a class="nav-link active">Add Teacher</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Add Teacher</a>
+          </li>
+          }
+          @if(this.roles.delteTeacher === true){
+          <li class="nav-item">
+            <a class="nav-link active">Delete Teacher</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Delete Teacher</a>
+          </li>
+          }
+          @if(this.roles.updateTeacher === true){
+          <li class="nav-item">
+            <a class="nav-link active">Update Teacher</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Update Teacher</a>
+          </li>
+          }
+          @if(this.roles.addAdmin === true){
+          <li class="nav-item">
+            <a class="nav-link active">Add Admin</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Add Admin</a>
+          </li>
+          }
+          @if(this.roles.sendEmail === true){
+          <li class="nav-item">
+            <a class="nav-link active">Send Email</a>
+          </li>
+          }@else{
+          <li class="nav-item">
+            <a class="nav-link disabled">Send Email</a>
+          </li>
+          }
+
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="cereateExam">Add Exam</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="CreateCourses">Creeate Course</a>
+          </li>
+
+
+
+
+        </ul>
+      
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid" style="padding-top:70px;">
+  <div class="row">
+    <div class="col-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+</div>
+     
+ 
+
+

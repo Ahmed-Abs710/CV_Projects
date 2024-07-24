@@ -1,0 +1,87 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 w-25">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Username</mat-label>
+        <input matInput placeholder="Username" [(ngModel)]="username" required >
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+      </mat-form-field>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-6 w-25">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput
+               placeholder="pat@example.com"
+               [formControl]="email"
+               (blur)="updateErrorMessage()"
+               required  [(ngModel)]="mail"  />
+        @if (email.invalid) {
+        <mat-error>{{errorMessage()}}</mat-error>
+        }
+        <mat-icon matSuffix>mail</mat-icon>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 w-25">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Full name</mat-label>
+        <input matInput placeholder="Full Name" [(ngModel)]="fullname" required >
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+      </mat-form-field>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide() ? 'password' : 'text'" [(ngModel)]="password" required/>
+        <button mat-icon-button
+                matSuffix
+                (click)="clickEvent($event)"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide()"    >
+          <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="date" required >
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <mat-radio-group aria-label="Select an option" [(ngModel)]="roleid">
+        @for(role of Allrole; track $index){
+        <mat-radio-button value="{{role.id}}">{{role.name}}</mat-radio-button>
+        }
+      </mat-radio-group>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <button mat-flat-button (click)="AddNewUser()">Add New User</button>
+    </div>
+  </div>
+
+</div>
+
+
+

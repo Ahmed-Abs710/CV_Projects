@@ -1,0 +1,62 @@
+<div class="container-fluid text-center">
+  <div class="row justify-content-md-center">
+    <div class="col-12">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Course Title</mat-label>
+        <input matInput [(ngModel)]="cour.Title">
+      </mat-form-field>
+    </div>
+    <div class="col-12">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Course Desription</mat-label>
+        <input matInput [(ngModel)]="cour.Description">
+      </mat-form-field>
+    </div>
+    <div class="col-12">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Course Instructor</mat-label>
+        <input matInput [(ngModel)]="cour.Instructor">
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <div class="input-group">
+        <input type="file" class="form-control" (change)="GetFile($event)" accept="image/*" style="width:10px;"
+               id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+      </div>
+    </div>
+    <div class="col-12">
+      <button mat-flat-button class="m-2" (click)="AddCourse()">Add Course</button>
+    </div>
+    <div class="col-12">
+      <mat-form-field class="m-2 w-50">
+        <mat-label>Courses</mat-label>
+        <mat-select [(ngModel)]="video.courseid">
+          @for(cour of CourseData; track cour.id){
+          <mat-option [value]="cour.id">{{cour.title}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-12">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Video Title</mat-label>
+        <input matInput [(ngModel)]="video.Title">
+      </mat-form-field>
+    </div>
+    <div class="col-12">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Video Decreption</mat-label>
+        <input matInput [(ngModel)]="video.Description">
+      </mat-form-field>
+    </div>
+    <div class="col-6">
+      <div class="input-group">
+        <input type="file" class="form-control" (change)="GetVideoFile($event)" accept="video/*" style="width:10px;"
+               id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+      </div>
+    </div>
+    <div class="col-12">
+      <button mat-flat-button class="m-2" (click)="AddVideo()">Add Course</button>
+    </div>
+  </div>
+</div>

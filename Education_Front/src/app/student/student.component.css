@@ -1,0 +1,25 @@
+.Vertical-Tabs {
+  display:flex;
+  flex-direction:column;
+  height:100%
+}
+
+.mat-tab-group {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+
+.mat-tab-label-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.mat-tab-header-pagination{
+    display:none;
+}
+
+.mat-tab-body-wrapper{
+    flex-grow:1;
+}

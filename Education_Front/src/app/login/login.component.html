@@ -1,0 +1,29 @@
+
+<div class="rounded container d-flex justify-content-center align-items-center w-50" style="height:100vh;">
+  <mat-card class="p-4 w-100">
+    <h2 class="text-center mb-4">Login</h2>
+    <form [formGroup]="loginForm">
+      <mat-form-field class="w-100 mb-3 text-center" appearance="fill">
+        <mat-label>Username</mat-label>
+        <!--<mat-icon matperfix class="">person</mat-icon>-->
+        <input matInput [(ngModel)]="User" name="User" [ngModelOptions]="{standalone: true}" placeholder="Username" class="w-75 text-center justify-content-center" type="text" required />
+      </mat-form-field>
+      <mat-form-field class="w-100 mb-3 text-center" appearance="fill">
+        <mat-label>Password</mat-label>
+        <!--<mat-icon matPerfix>lock</mat-icon>-->
+        <input matInput [(ngModel)]="pass" name="pass" [ngModelOptions]="{standalone: true}"
+               placeholder="Password" class="w-75 text-center justify-content-center" type="password" required />
+      </mat-form-field>
+      <button mat-flat-button (click)="show()" class="w-100 m-2">Login</button>
+      <mat-error>
+        {{error}}
+      </mat-error>
+    </form>
+  </mat-card>
+
+</div>
+
+ <!--@for(res of response; track $index){
+<h4 class="text-primary">{{res.userName}}</h4>
+<br />
+ }-->

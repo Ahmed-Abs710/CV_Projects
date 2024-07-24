@@ -1,0 +1,84 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pics2\2c0d7b6d-76f4-4bf5-a602-07e874cf478b_Capture.PNG))">
+      <SourceType>Package</SourceType>
+      <SourceId>Courses_Service</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Courses_Service</BasePath>
+      <RelativePath>pics2/2c0d7b6d-76f4-4bf5-a602-07e874cf478b_Capture.PNG</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pics2\2c0d7b6d-76f4-4bf5-a602-07e874cf478b_Capture.PNG))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pics2\6a4bcbee-5f1e-4c9e-bd29-65bda635a859_Capture.PNG))">
+      <SourceType>Package</SourceType>
+      <SourceId>Courses_Service</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Courses_Service</BasePath>
+      <RelativePath>pics2/6a4bcbee-5f1e-4c9e-bd29-65bda635a859_Capture.PNG</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\pics2\6a4bcbee-5f1e-4c9e-bd29-65bda635a859_Capture.PNG))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\vids\5719a52b-211a-417b-ac0d-9271546b1450_20.07.2024_06.13.17_REC.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>Courses_Service</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Courses_Service</BasePath>
+      <RelativePath>vids/5719a52b-211a-417b-ac0d-9271546b1450_20.07.2024_06.13.17_REC.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\vids\5719a52b-211a-417b-ac0d-9271546b1450_20.07.2024_06.13.17_REC.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\vids\d166b3d9-d8a5-4ba6-a99b-8f80c55be737_02-إعداد-و-تثبيت-بيئة-العمل-Install-Enti_44.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>Courses_Service</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Courses_Service</BasePath>
+      <RelativePath>vids/d166b3d9-d8a5-4ba6-a99b-8f80c55be737_02-إعداد-و-تثبيت-بيئة-العمل-Install-Enti_44.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\vids\d166b3d9-d8a5-4ba6-a99b-8f80c55be737_02-إعداد-و-تثبيت-بيئة-العمل-Install-Enti_44.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\vids\d5d79d57-f299-47df-a371-c09c360612fd_Video.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>Courses_Service</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Courses_Service</BasePath>
+      <RelativePath>vids/d5d79d57-f299-47df-a371-c09c360612fd_Video.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\vids\d5d79d57-f299-47df-a371-c09c360612fd_Video.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

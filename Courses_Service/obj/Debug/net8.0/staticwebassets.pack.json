@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Projects\\Education\\Education_Platform\\Courses_Service\\wwwroot\\pics2\\2c0d7b6d-76f4-4bf5-a602-07e874cf478b_Capture.PNG",
+      "PackagePath": "staticwebassets\\pics2\\2c0d7b6d-76f4-4bf5-a602-07e874cf478b_Capture.PNG"
+    },
+    {
+      "Id": "E:\\Projects\\Education\\Education_Platform\\Courses_Service\\wwwroot\\pics2\\6a4bcbee-5f1e-4c9e-bd29-65bda635a859_Capture.PNG",
+      "PackagePath": "staticwebassets\\pics2\\6a4bcbee-5f1e-4c9e-bd29-65bda635a859_Capture.PNG"
+    },
+    {
+      "Id": "E:\\Projects\\Education\\Education_Platform\\Courses_Service\\wwwroot\\vids\\5719a52b-211a-417b-ac0d-9271546b1450_20.07.2024_06.13.17_REC.mp4",
+      "PackagePath": "staticwebassets\\vids\\5719a52b-211a-417b-ac0d-9271546b1450_20.07.2024_06.13.17_REC.mp4"
+    },
+    {
+      "Id": "E:\\Projects\\Education\\Education_Platform\\Courses_Service\\wwwroot\\vids\\d166b3d9-d8a5-4ba6-a99b-8f80c55be737_02-إعداد-و-تثبيت-بيئة-العمل-Install-Enti_44.mp4",
+      "PackagePath": "staticwebassets\\vids\\d166b3d9-d8a5-4ba6-a99b-8f80c55be737_02-إعداد-و-تثبيت-بيئة-العمل-Install-Enti_44.mp4"
+    },
+    {
+      "Id": "E:\\Projects\\Education\\Education_Platform\\Courses_Service\\wwwroot\\vids\\d5d79d57-f299-47df-a371-c09c360612fd_Video.mp4",
+      "PackagePath": "staticwebassets\\vids\\d5d79d57-f299-47df-a371-c09c360612fd_Video.mp4"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Courses_Service.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Courses_Service.props",
+      "PackagePath": "build\\Courses_Service.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Courses_Service.props",
+      "PackagePath": "buildMultiTargeting\\Courses_Service.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Courses_Service.props",
+      "PackagePath": "buildTransitive\\Courses_Service.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

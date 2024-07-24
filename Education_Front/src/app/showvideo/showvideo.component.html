@@ -1,0 +1,37 @@
+@if(vidurl){
+<div class="container " style="margin-top:50px;">
+  <div class="row justify-content-center">
+    <h1 class="text-center">{{videos.title}}</h1>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <video class="w-100" controls>
+        <source [src]="vidurl" type="video/mp4" />
+        <!--<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />-->
+      </video>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="input-group">
+      <!--<span class="input-group-text">With textarea</span>-->
+      <textarea class="form-control" [(ngModel)]="addcom.commentText"></textarea>
+      <button (click)="AddComment()" class="btn btn-primary">COmment</button>
+    </div>
+  </div>
+  <div class="row justify-content-center" style="margin-top:20px;">
+    <div class="col-12 ">
+      @for(com of comment; track $index){
+      <div class="card m-3">
+        <div class="card-header">
+          {{com.video}}
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{com.commentText}}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+  
+</div>
+}

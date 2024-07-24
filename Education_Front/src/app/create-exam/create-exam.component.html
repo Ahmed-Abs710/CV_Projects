@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Exam Name</mat-label>
+        <input matInput [(ngModel)]="examtitle">
+      </mat-form-field> 
+      <button mat-flat-button (click)="AddExam()">Add Exam</button>
+    </div>
+  
+    <div class="col-6">
+      <mat-form-field class="m-2 w-50">
+        <mat-label>Exams</mat-label>
+        <mat-select [(ngModel)]="examId" (selectionChange)="GetQuestionByExamId()">
+          @for(ex of examData; track ex.id){
+          <mat-option  [value]="ex.id">{{ex.title}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Question Name</mat-label>
+        <input matInput [(ngModel)]="questonName">
+      </mat-form-field>
+      <button mat-flat-button (click)="AddQuestion()">Add Question</button>
+    </div>
+    <div class="col-6">
+      <mat-form-field class="m-2 w-50">
+        <mat-label>Questions</mat-label>
+        <mat-select [(ngModel)]="answer.QuestionId">
+          @for(ex of questionData; track ex.id){
+          <mat-option [value]="ex.id">{{ex.text}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-8">
+      <mat-form-field class="example-full-width m-2 w-50">
+        <mat-label>Answer Name</mat-label>
+        <input matInput [(ngModel)]="answer.Text">
+      </mat-form-field>
+      
+    </div>
+    <div class="col-8">
+      <mat-radio-group aria-label="Select an option" [(ngModel)]="answer.IsCorrect">
+
+        <mat-radio-button [value]="true">True</mat-radio-button>
+        <mat-radio-button [value]="false">False</mat-radio-button>
+      </mat-radio-group>     
+    </div>
+    <div class="col-8">
+      <button mat-flat-button (click)="AddAnswer()">Add Answer</button>
+    </div>
+  </div>
+</div>
+
+

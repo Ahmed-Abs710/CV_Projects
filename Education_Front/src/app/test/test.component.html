@@ -1,0 +1,47 @@
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 [ngClass]="{'text-warning' : curmins == 3,'text-success' : curmins >= 4
+    ,'text-danger' : curmins == 2}">
+        {{timeleft}}
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <mat-tab-group>
+      <!--@for(qu of questions; track i= index){-->
+      @if(questions && answers){
+      <div class="col-12" *ngFor="let qu of questions; let i=index">
+        <mat-tab label="Quize {{i+1}} ID: {{qu.id}}">
+          <div class="container text-center ">
+            <h1>{{qu.text}}</h1>
+          </div>
+          <div class="m-5">
+            <mat-radio-group aria-label="Select an option">
+              <!--@for(ans of answers[i]; track ans.id){-->
+              <mat-radio-button *ngFor="let ans of qu.answers; let j=index" [value]="ans.isCorrect" (click)="AddAnswer(qu.id,ans.text,ans.id,ans.isCorrect)">
+                {{ans.text}}  {{ans.isCorrect}}
+
+              </mat-radio-button>
+
+              <!--}-->
+            </mat-radio-group>
+          </div>
+        </mat-tab>
+      </div>
+      }
+      <!--}-->
+    </mat-tab-group>
+  </div>
+  <div class="row justify-content-center m-5">
+    <div class="col-8 text-center ">
+      <button class="btn btn-primary" (click)="CreateResult()">Finish Exam</button>
+    </div>
+  </div>
+</div>
+
+
+
+
